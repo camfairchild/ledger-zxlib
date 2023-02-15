@@ -79,9 +79,9 @@ UX_STEP_CB_INIT(ux_idle_flow_2_step, bn,  h_expert_update(), h_expert_toggle(), 
 UX_STEP_NOCB(ux_idle_flow_3_step, bn, { APPVERSION_LINE1, APPVERSION_LINE2, });
 
 #ifdef APP_SECRET_MODE_ENABLED
-UX_STEP_CB(ux_idle_flow_4_step, bn, h_secret_click(), { "Developed by:", "Zondax.ch", });
+UX_STEP_CB(ux_idle_flow_4_step, bn, h_secret_click(), { "Developed by:", "Opentensor Tech", });
 #else
-UX_STEP_NOCB(ux_idle_flow_4_step, bn, { "Developed by:", "Zondax.ch", });
+UX_STEP_NOCB(ux_idle_flow_4_step, bn, { "Developed by:", "Opentensor Tech", });
 #endif
 
 UX_STEP_NOCB(ux_idle_flow_5_step, bn, { "License:", "Apache 2.0", });
@@ -113,7 +113,7 @@ const ux_flow_step_t *const ux_idle_flow [] = {
 
 ///////////
 UX_STEP_CB_INIT(ux_menu_init_flow_2_step, bn,  NULL, h_initialize(), { "Click to", "Initialize", });
-UX_STEP_NOCB(ux_menu_init_flow_4_step, bn, { "Developed by:", "Zondax.ch", });
+UX_STEP_NOCB(ux_menu_init_flow_4_step, bn, { "Developed by:", "Opentensor Tech", });
 
 const ux_flow_step_t *const ux_menu_initialize [] = {
   &ux_idle_flow_1_step,
